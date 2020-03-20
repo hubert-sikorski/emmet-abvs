@@ -1,4 +1,14 @@
-# Emmet abbreviations list
+## Emmet abbreviations list
+
+This repo is a list of the most useful emmet abbreviations for working in HTML or HTML Native files
+
+## Table of contents
+
+- [HTML Boilerplate](#html-boilerplate)
+- [Tags](#tags)
+  - [Tags with classes](#tags-with-classes)
+
+# HTML Boilerplate
 
 - `!` - generate HTML Boilerplate
 
@@ -16,6 +26,8 @@
 </html>
 ```
 
+# Tags
+
 - `[tag_name]` - generate a tag by typing its name
 
 ```html
@@ -24,6 +36,8 @@ span -> <span></span>
 img -> <img src="" alt="">
 a -> <a href=""></a>
 ```
+
+## Tags with classes
 
 - `[tag_name].[class_name]` - generate a tag with specified class
 
