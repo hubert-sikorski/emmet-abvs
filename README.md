@@ -12,6 +12,12 @@ This repo is a list of the most useful emmet abbreviations for working in HTML o
 - [Div shortcuts](#div-shortcuts)
 - [Custom attributes](#custom-attributes)
   - [Div with custom attribute](#div-with-custom-attribute)
+  - [Div with custom attribute and class](#div-with-custom-attribute-and-class)
+- [Nesting child elements](#nesting-child-elements)
+  - [Nesting multiple children](#nesting-multiple-children)
+- [Creating multiple tags](#creating-multiple-tags)
+  - [Creating multiple tags with hard-coded values](#creating-multiple-tags-with-hard-coded-values)
+  - [Creating multiple tags with numbered values](#creating-multiple-tags-with-numbered-values)
 
 # HTML Boilerplate
 
@@ -93,4 +99,71 @@ button[type="button"] -> <button type="button"></button>
 
 ```html
 [data-selected] -> <div data-selected=""></div>
+```
+
+## Div with custom attribute and class
+
+- `[attribute_name].[class_name]`
+
+```html
+[data-selected].active -> <div data-selected="" class="active"></div>
+```
+
+# Nesting child elements
+
+- `[parent]>[child]`
+
+```html
+.purple>span.magneta -> <div class="purple"><span class="magneta"></span></div>
+```
+
+## Nesting multiple children
+
+- `[parent]>[child]>[child]>...`
+
+```html
+header>nav>ul ->
+<header>
+  <nav>
+    <ul></ul>
+  </nav>
+</header>
+```
+
+# Creating multiple tags
+
+- `[tag_name]*[number]`
+
+```html
+li*3 ->
+<li></li>
+<li></li>
+<li></li>
+```
+
+## Creating multiple tags with hard-coded values
+
+- `[tag_name]*[number]{value}`
+
+```html
+li*3{emmet is easy} ->
+<li>emmet is easy</li>
+<li>emmet is easy</li>
+<li>emmet is easy</li>
+```
+
+## Creating multiple tags with numbered values
+
+- `[tag_name]*[number]{$}`
+
+```html
+li*3{item $} ->
+<li>item 1</li>
+<li>item 2</li>
+<li>item 3</li>
+
+li*3.class-${item $} ->
+<li class="class-1">item 1</li>
+<li class="class-2">item 2</li>
+<li class="class-3">item 3</li>
 ```
