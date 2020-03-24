@@ -9,6 +9,7 @@ This repo is a list of the most useful emmet abbreviations for working in HTML o
   - [Tags with classes](#tags-with-classes)
   - [Tags with ids](#tags-with-ids)
   - [Tags with multiple classes and ids](#tags-with-multiple-classes-and-ids)
+  - [Tags with hard-coded values](#tags-with-hard-coded-values)
 - [Div shortcuts](#div-shortcuts)
 - [Custom attributes](#custom-attributes)
   - [Div with custom attribute](#div-with-custom-attribute)
@@ -18,6 +19,10 @@ This repo is a list of the most useful emmet abbreviations for working in HTML o
 - [Creating multiple tags](#creating-multiple-tags)
   - [Creating multiple tags with hard-coded values](#creating-multiple-tags-with-hard-coded-values)
   - [Creating multiple tags with numbered values](#creating-multiple-tags-with-numbered-values)
+- [Creating sibling elements](#creating-sibling-elements)
+  - [Nesting child elements in sibling elements](#nesting-child-elements-in-sibling-elements)
+- [Forms](#forms)
+  - [Inputs](#inputs)
 
 # HTML Boilerplate
 
@@ -73,6 +78,15 @@ span#wrapper -> <span id="wrapper"></span>
 
 ```html
 div.class-1.class-2#id-1 -> <div class="class-1 class-2" id="id-1"></div>
+```
+
+## Tags with hard-coded values
+
+- `[tag_name]{value}`
+
+```html
+div{hello} -> <div>hello</div>
+p.muted{hello again} -> <p class="muted">hello again</p>
 ```
 
 # Div shortcuts
@@ -166,4 +180,51 @@ li*3.class-${item $} ->
 <li class="class-1">item 1</li>
 <li class="class-2">item 2</li>
 <li class="class-3">item 3</li>
+```
+
+# Creating sibling elements
+
+- `[tag_name]+[tag_name]+[tag_name]+...`
+
+```html
+header+main+footer ->
+<header></header>
+<main></main>
+<footer></footer>
+```
+
+## Nesting child elements in sibling elements
+
+- `[tag_name]>[tag_name]^[tag_name]+[tag_name]` - generate a tag with one child element and two siblings
+
+- (alternative grouping syntax) `([tag_name]>[tag_name])+[tag_name]+[tag_name]`
+
+```html
+header>nav^main+footer ->
+<header>
+  <nav></nav>
+</header>
+<main></main>
+<footer></footer>
+```
+
+# Forms
+
+- `form:[form_method]`
+
+```html
+form:post -> <form action="" method="post"></form>
+```
+
+## Inputs
+
+- `input:[input_type]`
+
+```html
+form:post>.group>input:text ->
+<form action="" method="post">
+  <div class="group">
+    <input type="text" name="" id="">
+  </div>
+</form>
 ```
