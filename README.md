@@ -27,7 +27,7 @@ This repo is a list of the most useful emmet abbreviations for working in HTML o
 
 # HTML Boilerplate
 
-- `!` - generate HTML Boilerplate
+`!` - generate HTML Boilerplate
 
 ```html
 <!DOCTYPE html>
@@ -45,7 +45,7 @@ This repo is a list of the most useful emmet abbreviations for working in HTML o
 
 # Tags
 
-- `[tag_name]` - generate a tag by typing its name
+`[tag_name]` - generate a tag by typing its name
 
 ```html
 div -> <div></div>
@@ -57,7 +57,7 @@ link -> <link rel="stylesheet" href="">
 
 ## Tags with classes
 
-- `[tag_name].[class_name]`
+`[tag_name].[class_name]`
 
 ```html
 div.container -> <div class="container"></div>
@@ -75,7 +75,7 @@ span#wrapper -> <span id="wrapper"></span>
 
 ## Tags with multiple classes and ids
 
-- `[tag_name].[class_name]#[id_name]`
+`[tag_name].[class_name]#[id_name]`
 
 ```html
 div.class-1.class-2#id-1 -> <div class="class-1 class-2" id="id-1"></div>
@@ -83,7 +83,7 @@ div.class-1.class-2#id-1 -> <div class="class-1 class-2" id="id-1"></div>
 
 ## Tags with hard-coded values
 
-- `[tag_name]{value}`
+`[tag_name]{value}`
 
 ```html
 div{hello} -> <div>hello</div>
@@ -92,7 +92,7 @@ p.muted{hello again} -> <p class="muted">hello again</p>
 
 # Div shortcuts
 
-- `.[class_name]` or `#[id_name]`
+`.[class_name]` or `#[id_name]`
 
 ```html
 .class -> <div class="class"></div>
@@ -101,7 +101,7 @@ p.muted{hello again} -> <p class="muted">hello again</p>
 
 # Custom attributes
 
-- `[tag_name][attribute_name]`
+`[tag_name][attribute_name]`
 
 ```html
 button[type] -> <button type=""></button>
@@ -110,7 +110,7 @@ button[type="button"] -> <button type="button"></button>
 
 ## Div with custom attribute
 
-- `[attribute_name]`
+`[attribute_name]`
 
 ```html
 [data-selected] -> <div data-selected=""></div>
@@ -118,7 +118,7 @@ button[type="button"] -> <button type="button"></button>
 
 ## Div with custom attribute and class
 
-- `[attribute_name].[class_name]`
+`[attribute_name].[class_name]`
 
 ```html
 [data-selected].active -> <div data-selected="" class="active"></div>
@@ -126,7 +126,7 @@ button[type="button"] -> <button type="button"></button>
 
 # Nesting child elements
 
-- `[parent]>[child]`
+`[parent]>[child]`
 
 ```html
 .purple>span.magneta -> <div class="purple"><span class="magneta"></span></div>
@@ -134,10 +134,11 @@ button[type="button"] -> <button type="button"></button>
 
 ## Nesting multiple children
 
-- `[parent]>[child]>[child]>...`
+`[parent]>[child]>[child]>...`
 
 ```html
 header>nav>ul ->
+
 <header>
   <nav>
     <ul></ul>
@@ -147,10 +148,11 @@ header>nav>ul ->
 
 # Creating multiple tags
 
-- `[tag_name]*[number]`
+`[tag_name]*[number]`
 
 ```html
 li*3 ->
+
 <li></li>
 <li></li>
 <li></li>
@@ -158,10 +160,11 @@ li*3 ->
 
 ## Creating multiple tags with hard-coded values
 
-- `[tag_name]*[number]{value}`
+`[tag_name]*[number]{value}`
 
 ```html
 li*3{emmet is easy} ->
+
 <li>emmet is easy</li>
 <li>emmet is easy</li>
 <li>emmet is easy</li>
@@ -169,15 +172,17 @@ li*3{emmet is easy} ->
 
 ## Creating multiple tags with numbered values
 
-- `[tag_name]*[number]{$}`
+`[tag_name]*[number]{$}`
 
 ```html
 li*3{item $} ->
+
 <li>item 1</li>
 <li>item 2</li>
 <li>item 3</li>
 
 li*3.class-${item $} ->
+
 <li class="class-1">item 1</li>
 <li class="class-2">item 2</li>
 <li class="class-3">item 3</li>
@@ -185,10 +190,11 @@ li*3.class-${item $} ->
 
 # Creating sibling elements
 
-- `[tag_name]+[tag_name]+[tag_name]+...`
+`[tag_name]+[tag_name]+[tag_name]+...`
 
 ```html
 header+main+footer ->
+
 <header></header>
 <main></main>
 <footer></footer>
@@ -198,10 +204,11 @@ header+main+footer ->
 
 - `[tag_name]>[tag_name]^[tag_name]+[tag_name]` - generate a tag with one child element and two siblings
 
-- (alternative grouping syntax) `([tag_name]>[tag_name])+[tag_name]+[tag_name]`
+- `([tag_name]>[tag_name])+[tag_name]+[tag_name]` - alternative grouping syntax
 
 ```html
 header>nav^main+footer ->
+
 <header>
   <nav></nav>
 </header>
@@ -211,7 +218,7 @@ header>nav^main+footer ->
 
 # Forms
 
-- `form:[form_method]`
+`form:[form_method]`
 
 ```html
 form:post -> <form action="" method="post"></form>
@@ -219,10 +226,11 @@ form:post -> <form action="" method="post"></form>
 
 ## Inputs
 
-- `input:[input_type]`
+`input:[input_type]`
 
 ```html
 form:post>.group>input:text ->
+
 <form action="" method="post">
   <div class="group">
     <input type="text" name="" id="">
