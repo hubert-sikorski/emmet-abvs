@@ -23,6 +23,7 @@ This repo is a list of the most useful emmet abbreviations for working in HTML o
   - [Nesting child elements in sibling elements](#nesting-child-elements-in-sibling-elements)
 - [Forms](#forms)
   - [Inputs](#inputs)
+- [Other sources](#other-sources)
 
 # HTML Boilerplate
 
@@ -228,3 +229,9 @@ form:post>.group>input:text ->
   </div>
 </form>
 ```
+
+# Other sources
+
+- [Emmet cheatsheet](https://docs.emmet.io/cheat-sheet)
+- [Emmet docs](https://docs.emmet.io/)
+- [Emmet repo](https://github.com/emmetio/emmet)
