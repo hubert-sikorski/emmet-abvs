@@ -12,8 +12,8 @@ This repo is a list of the most useful emmet abbreviations for working in HTML o
   - [Tags with hard-coded values](#tags-with-hard-coded-values)
 - [Div shortcuts](#div-shortcuts)
 - [Custom attributes](#custom-attributes)
-  - [Div with custom attribute](#div-with-custom-attribute)
-  - [Div with custom attribute and class](#div-with-custom-attribute-and-class)
+  - [Div with a custom attribute](#div-with-a-custom-attribute)
+  - [Div with a custom attribute and class](#div-with-a-custom-attribute-and-class)
 - [Nesting child elements](#nesting-child-elements)
   - [Nesting multiple children](#nesting-multiple-children)
 - [Creating multiple tags](#creating-multiple-tags)
@@ -27,7 +27,7 @@ This repo is a list of the most useful emmet abbreviations for working in HTML o
 
 # HTML Boilerplate
 
-`!` - generate HTML Boilerplate
+`!` - generate an HTML Boilerplate
 
 ```html
 <!DOCTYPE html>
@@ -57,7 +57,7 @@ link -> <link rel="stylesheet" href="">
 
 ## Tags with classes
 
-`[tag_name].[class_name]`
+`[tag_name].[class_name]` - generate a tag with a defined class name
 
 ```html
 div.container -> <div class="container"></div>
@@ -66,7 +66,7 @@ span.wrapper -> <span class="wrapper"></span>
 
 ## Tags with ids
 
-- `[tag_name].[id_name]`
+`[tag_name].[id_name]` - generate a tag with a defined id
 
 ```html
 div#container -> <div id="container"></div>
@@ -75,7 +75,7 @@ span#wrapper -> <span id="wrapper"></span>
 
 ## Tags with multiple classes and ids
 
-`[tag_name].[class_name]#[id_name]`
+`[tag_name].[class_name]#[id_name]` - generate a tag with defined class name(s) and an id(s)
 
 ```html
 div.class-1.class-2#id-1 -> <div class="class-1 class-2" id="id-1"></div>
@@ -83,7 +83,7 @@ div.class-1.class-2#id-1 -> <div class="class-1 class-2" id="id-1"></div>
 
 ## Tags with hard-coded values
 
-`[tag_name]{value}`
+`[tag_name]{value}` - generate a tag with a defined hard-coded value
 
 ```html
 div{hello} -> <div>hello</div>
@@ -92,7 +92,7 @@ p.muted{hello again} -> <p class="muted">hello again</p>
 
 # Div shortcuts
 
-`.[class_name]` or `#[id_name]`
+`.[class_name]` or `#[id_name]` - generate a div with a defined class name or an id
 
 ```html
 .class -> <div class="class"></div>
@@ -101,24 +101,24 @@ p.muted{hello again} -> <p class="muted">hello again</p>
 
 # Custom attributes
 
-`[tag_name][attribute_name]`
+`[tag_name][attribute_name]` - generate a tag with a custom attribute
 
 ```html
 button[type] -> <button type=""></button>
 button[type="button"] -> <button type="button"></button>
 ```
 
-## Div with custom attribute
+## Div with a custom attribute
 
-`[attribute_name]`
+`[attribute_name]` - generate a div with a custom attribute
 
 ```html
 [data-selected] -> <div data-selected=""></div>
 ```
 
-## Div with custom attribute and class
+## Div with a custom attribute and class
 
-`[attribute_name].[class_name]`
+`[attribute_name].[class_name]` - generate a div with a custom attribute and a defined class name
 
 ```html
 [data-selected].active -> <div data-selected="" class="active"></div>
@@ -126,7 +126,7 @@ button[type="button"] -> <button type="button"></button>
 
 # Nesting child elements
 
-`[parent]>[child]`
+`[parent]>[child]` - generate a tag with a defined element nested as its child
 
 ```html
 .purple>span.magneta -> <div class="purple"><span class="magneta"></span></div>
@@ -134,7 +134,7 @@ button[type="button"] -> <button type="button"></button>
 
 ## Nesting multiple children
 
-`[parent]>[child]>[child]>...`
+`[parent]>[child]>[child]>...` - generate a tag with a multiple defined elements nested as its children and grandchildren
 
 ```html
 header>nav>ul ->
@@ -148,7 +148,7 @@ header>nav>ul ->
 
 # Creating multiple tags
 
-`[tag_name]*[number]`
+`[tag_name]*[number]` - generate a defined number of tags
 
 ```html
 li*3 ->
@@ -160,7 +160,7 @@ li*3 ->
 
 ## Creating multiple tags with hard-coded values
 
-`[tag_name]*[number]{value}`
+`[tag_name]*[number]{value}` - generate a defined number of tags with a specified hard-coded value
 
 ```html
 li*3{emmet is easy} ->
@@ -172,7 +172,7 @@ li*3{emmet is easy} ->
 
 ## Creating multiple tags with numbered values
 
-`[tag_name]*[number]{$}`
+`[tag_name]*[number]{$}` - generate a defined number of tags with a dynamically changing number value
 
 ```html
 li*3{item $} ->
@@ -190,7 +190,7 @@ li*3.class-${item $} ->
 
 # Creating sibling elements
 
-`[tag_name]+[tag_name]+[tag_name]+...`
+`[tag_name]+[tag_name]+[tag_name]+...` - generate tags which compose sibling relationship in the document
 
 ```html
 header+main+footer ->
@@ -218,7 +218,7 @@ header>nav^main+footer ->
 
 # Forms
 
-`form:[form_method]`
+`form:[form_method]` - generate a form with a defined method
 
 ```html
 form:post -> <form action="" method="post"></form>
@@ -226,7 +226,7 @@ form:post -> <form action="" method="post"></form>
 
 ## Inputs
 
-`input:[input_type]`
+`input:[input_type]` - generate an input with a defined type
 
 ```html
 form:post>.group>input:text ->
