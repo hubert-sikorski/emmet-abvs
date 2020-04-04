@@ -28,7 +28,7 @@ This repo is a list of the most useful emmet abbreviations for working in HTML o
 
 # HTML Boilerplate
 
-`!` - generate an HTML Boilerplate
+`!` or `html:5` - generate an HTML Boilerplate
 
 ```html
 <!DOCTYPE html>
@@ -46,10 +46,11 @@ This repo is a list of the most useful emmet abbreviations for working in HTML o
 
 # Mock text
 
-`Lorem[number]` -generate mock text with specified length
+`lorem[number]` -generate mock text with specified length
 
 ```html
-Lorem5 -> Lorem ipsum dolor sit amet.
+lorem5 -> Lorem ipsum dolor sit amet.
+lorem -> Lorem, ipsum dolor sit amet consectetur adipisicing...
 ```
 
 # Tags
