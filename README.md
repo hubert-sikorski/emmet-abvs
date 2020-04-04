@@ -5,6 +5,7 @@ This repo is a list of the most useful emmet abbreviations for working in HTML o
 ## Table of contents
 
 - [HTML Boilerplate](#html-boilerplate)
+- [Mock text](#mock-text)
 - [Tags](#tags)
   - [Tags with classes](#tags-with-classes)
   - [Tags with ids](#tags-with-ids)
@@ -41,6 +42,14 @@ This repo is a list of the most useful emmet abbreviations for working in HTML o
 
 </body>
 </html>
+```
+
+# Mock text
+
+`Lorem[number]` -generate mock text with specified length
+
+```html
+Lorem5 -> Lorem ipsum dolor sit amet.
 ```
 
 # Tags
