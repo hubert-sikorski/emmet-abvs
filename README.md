@@ -1,7 +1,3 @@
-## Emmet abbreviations list
-
-This repo is a list of the most useful emmet abbreviations for working in HTML or HTML Native files
-
 ## Table of contents
 
 - [HTML Boilerplate](#html-boilerplate)
@@ -76,7 +72,7 @@ span.wrapper -> <span class="wrapper"></span>
 
 ## Tags with ids
 
-`[tag_name].[id_name]` - generate a tag with a defined id
+`[tag_name]#[id_name]` - generate a tag with a defined id
 
 ```html
 div#container -> <div id="container"></div>
